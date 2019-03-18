@@ -10,7 +10,7 @@
         font-family:Monospace;
         font-size:13px;
         text-align:center;
-        background-color: #050505;
+        background-color: #B0AEB0;
         margin: 0px;
         overflow: hidden;
       }
@@ -45,7 +45,7 @@
         controls.addEventListener('change', render);
         //
         scene = new THREE.Scene();
-        scene.background = new THREE.Color( 0x050505 );
+        scene.background = new THREE.Color( 0xB0AEB0 );
         //
         var ambientLight = new THREE.AmbientLight( 0x222222 );
         scene.add( ambientLight );
@@ -74,7 +74,7 @@
         document.body.appendChild( renderer.domElement );
         //
         stats = new Stats();
-        document.body.appendChild( stats.dom );
+        //document.body.appendChild( stats.dom );
         //
         var gui = new dat.GUI();
         gui.add( material, 'wireframe' );
@@ -91,7 +91,7 @@
         requestAnimationFrame( animate );
         render();
         controls.update();
-        stats.update();
+        //stats.update();
       }
       function render() {
         renderer.render( scene, camera );
