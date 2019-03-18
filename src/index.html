@@ -44,7 +44,7 @@
     </div>
     
     <!-- The login popup -->
-    <div class = "login-popup " id = "projects-popup">
+    <div class = "login-popup off" id = "projects-popup">
         <div class="login-page">
           <div class="form">
             <h1>Maslow Create uses GitHub to store your projects</h1>
@@ -64,10 +64,11 @@
     <div class='parent flex-parent'>
         
         <!-- setup display of the errors as required by OpenJSCAD.js -->
-        <div class="jscad-container"> 
+        <!-- <div class="jscad-container">  -->
             <!-- setup display of the viewer, i.e. canvas -->
-            <div oncontextmenu="return false;" id="viewerContext" design-url="/currentProject.jscad"></div>
-        </div>
+            <!-- <div oncontextmenu="return false;" id="viewerContext" design-url="/currentProject.jscad"></div> -->
+        <!-- </div> -->
+        <iframe name="example" src="./example001.html" width="70%" height="100%" frameBorder="0">Example</iframe>
         
         
         <div class="sideBar">
@@ -75,7 +76,7 @@
         </div>
     </div>
     
-    <script src="/js/min.js"></script>
+    <!-- <script src="/js/min.js"></script> -->
     <script src="/js/octokit-rest.min.js"></script>
     <script src="/js/oauth.js"></script>
     <script src="/js/flowDraw.bundle.js"></script>
